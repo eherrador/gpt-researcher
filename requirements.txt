@@ -1,3 +1,11 @@
+# Fix de compatibilidad con NumPy 2.x
+numpy<2
+pybind11>=2.12
+
+# Estos dos módulos causan la mayoría de los problemas binarios
+torch==2.2.2           # O la última versión estable compatible con numpy<2
+sentence-transformers==2.6.1  # Compatible con torch y numpy<2
+
 # dependencies
 beautifulsoup4
 colorama
@@ -12,6 +20,8 @@ markdown
 langchain
 langchain_community
 langchain-openai
+langchain-groq
+langchain_huggingface
 tiktoken
 gpt-researcher
 arxiv
@@ -31,5 +41,5 @@ loguru
 langgraph
 
 # uncomment for testing
-# pytest
-# pytest-asyncio
+pytest
+pytest-asyncio

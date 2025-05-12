@@ -43,16 +43,16 @@
     <section class="landing">
         <div class="max-w-5xl mx-auto text-center">
             <h1 class="text-4xl font-extrabold mx-auto lg:text-7xl">
-                Say Goodbye to <br>
+                Dile Adios a <br>
                 <span
-                    style="background-image:linear-gradient(to right, #9867F0, #ED4E50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hours
-                    of Research</span>
+                    style="background-image:linear-gradient(to right, #9867F0, #ED4E50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Horas
+                    de Búsqueda, Investigación y Análisis</span>
             </h1>
             <p class="max-w-6xl mx-auto text-gray-600 mt-8" style="font-size:20px">
-                Say Hello to <b>GPT Researcher</b>, your AI mate for rapid insights and comprehensive research. <br>
-                GPT Researcher takes care of everything from accurate source gathering and organization of research results to generation of customized reports with citations.
+                Dile hola a <b>Bayro Researcher</b>, tu compañero de IA para obtener información rápida e investigación exhaustiva. <br>
+                Bayro Researcher se encarga de todo, desde la recopilación precisa de fuentes y la organización de los resultados de la investigación hasta la generación de informes personalizados con citas..
             </p>
-            <a href="#form" class="btn btn-primary">Get Started</a>
+            <a href="#form" class="btn btn-primary">Empezar</a>
         </div>
     </section>
 
@@ -60,7 +60,7 @@
         <div class="agent-item"><img src="/static/gptr-logo.png" class="avatar" alt="Auto Agent"></div>
         <form method="POST" class="mt-3" onsubmit="GPTResearcher.startResearch(); return false;">
             <div class="form-group">
-                <label for="task" class="agent-question">What would you like me to research next?</label>
+                <label for="task" class="agent-question">¿Qué te gustaría que investigara a continuación?</label>
                 <input id="task" name="task" class="form-control" required></input>
                 <input type="radio" name="agent" id="autoAgent" value="Auto Agent" checked hidden>
             </div>
@@ -72,100 +72,81 @@
                 <button type="button" id="btnShowAuto" class="btn btn-secondary mt-3 btn-show">Auto Agent</button>
             </div>
             <div class="form-group">
-                <label for="report_type" class="agent-question">What type of report would you like me to
-                    generate?</label>
+                <label for="report_type" class="agent-question">¿Qué tipo de informe le gustaría que generara?</label>
                 <select name="report_type" class="form-control" required>
-                    <option value="research_report">Summary - Short and fast (~2 min)</option>
-                    <option value="detailed_report">Detailed - In depth and longer (~5 min)</option>
-                    <option value="resource_report">Resource Report</option>
-                    <option value="deep">Deep Research</option>
+                    <option value="research_report">Resumen - Corto y rápido (~2 min)</option>
+                    <option value="detailed_report">Detallado - En profundidad y más largo (~5 min)</option>
+                    <option value="resource_report">Informe de Recursos</option>
+                    <option value="deep">Investigación Profunda</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="tone" class="agent-question">In which tone would you like the report to be
-                    generated?</label>
+                <label for="tone" class="agent-question">¿En qué tono le gustaría que se genere el informe?</label>
                 <select name="tone" id="tone" class="form-control" required>
-                    <option value="Objective">Objective - Impartial and unbiased presentation of facts and findings
-                    </option>
-                    <option value="Formal">Formal - Adheres to academic standards with sophisticated language and
-                        structure</option>
-                    <option value="Analytical">Analytical - Critical evaluation and detailed examination of data and
-                        theories</option>
-                    <option value="Persuasive">Persuasive - Convincing the audience of a particular viewpoint or
-                        argument</option>
-                    <option value="Informative">Informative - Providing clear and comprehensive information on a topic
-                    </option>
-                    <option value="Explanatory">Explanatory - Clarifying complex concepts and processes</option>
-                    <option value="Descriptive">Descriptive - Detailed depiction of phenomena, experiments, or case
-                        studies</option>
-                    <option value="Critical">Critical - Judging the validity and relevance of the research and its
-                        conclusions</option>
-                    <option value="Comparative">Comparative - Juxtaposing different theories, data, or methods to
-                        highlight differences and similarities</option>
-                    <option value="Speculative">Speculative - Exploring hypotheses and potential implications or future
-                        research directions</option>
-                    <option value="Reflective">Reflective - Considering the research process and personal insights or
-                        experiences</option>
-                    <option value="Narrative">Narrative - Telling a story to illustrate research findings or
-                        methodologies</option>
-                    <option value="Humorous">Humorous - Light-hearted and engaging, usually to make the content more
-                        relatable</option>
-                    <option value="Optimistic">Optimistic - Highlighting positive findings and potential benefits
-                    </option>
-                    <option value="Pessimistic">Pessimistic - Focusing on limitations, challenges, or negative outcomes
-                    </option>
+                    <option value="Objective">Objetivo: Presentación imparcial y objetiva de hechos y conclusiones</option>
+                    <option value="Formal">Formal: se adhiere a los estándares académicos con un lenguaje y una estructura sofisticados</option>
+                    <option value="Analytical">Analítico: evaluación crítica y examen detallado de datos y teorías</option>
+                    <option value="Persuasive">Persuasivo: Convencer a la audiencia de un punto de vista o argumento en particular</option>
+                    <option value="Informative">Informativo: Proporcionar información clara y completa sobre un tema</option>
+                    <option value="Explanatory">Explicativo - Aclarar conceptos y procesos complejos</option>
+                    <option value="Descriptive">Descriptivo: descripción detallada de fenómenos, experimentos o estudios de casos</option>
+                    <option value="Critical">Crítico - Juzgar la validez y relevancia de la investigación y sus conclusiones</option>
+                    <option value="Comparative">Comparativo: yuxtaponer diferentes teorías, datos o métodos para resaltar diferencias y similitudes</option>
+                    <option value="Speculative">Especulativo: Exploración de hipótesis y posibles implicaciones o futuras direcciones de investigación</option>
+                    <option value="Reflective">Reflexivo: Considerar el proceso de investigación y las perspectivas o experiencias personales</option>
+                    <option value="Narrative">Narrativa: Contar una historia para ilustrar los hallazgos o metodologías de investigación</option>
+                    <option value="Humorous">Humorístico: alegre y atractivo, generalmente para hacer que el contenido sea más identificable</option>
+                    <option value="Optimistic">Optimista: Destaca los hallazgos positivos y los beneficios potenciales</option>
+                    <option value="Pessimistic">Pesimista: se centra en las limitaciones, los desafíos o los resultados negativos</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="report_source" class="agent-question">What sources would you like me to research
-                    from?</label>
-                <p class="text-left mt-0 pt-0" style="font-size: 0.7rem;">You can now do research on local documents as
-                    well. Please make sure to add the DOC_PATH env variable pointing to your documents folder.</p>
+                <label for="report_source" class="agent-question">¿Qué fuentes te gustaría que investigara?</label>
+                <p class="text-left mt-0 pt-0" style="font-size: 0.7rem;">Ahora también puedes investigar en documentos locales. Asegúrate de agregar la variable de entorno DOC_PATH a tu carpeta de documentos.</p>
                 <select name="report_source" class="form-control" required>
-                    <option value="web">The Web</option>
-                    <option value="local">My Documents</option>
-                    <option value="hybrid">Hybrid</option>
-                    <option value="azure">Azure storage</option>
+                    <option value="web">Web</option>
+                    <option value="local">Mis Documentos</option>
+                    <option value="hybrid">Hybrido</option>
+                    <option value="azure">Almacenamiento en Azure</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="queryDomains" class="form-label">Query Domains (Optional)</label>
-                <input type="text" class="form-control" id="queryDomains" name="query_domains" placeholder="Enter domains separated by commas">
-                <small class="text-muted">Example: techcrunch.com, forbes.com</small>
+                <label for="queryDomains" class="form-label">Dominios de Consulta (opcional)</label>
+                <input type="text" class="form-control" id="queryDomains" name="query_domains" placeholder="Introduzca los dominios separados por comas">
+                <small class="text-muted">Ejemplo: techcrunch.com, forbes.com</small>
             </div>
-            <input type="submit" value="Research" class="btn btn-primary button-padding">
+            <input type="submit" value="Iniciar la Investigación" class="btn btn-primary button-padding">
         </form>
 
         <div class="margin-div">
-            <h2>Agent Output</h2>
-            <p class="mt-2 text-left" style="font-size: 0.8rem;">An agent tailored specifically to your task
-                will be generated to provide the most precise and relevant research results.</p>
+            <h2>Salida del Agente</h2>
+            <p class="mt-2 text-left" style="font-size: 0.8rem;">Se generará un agente adaptado específicamente a su tarea para proporcionar los resultados de investigación más precisos y relevantes.</p>
             <div id="output"></div>
         </div>
         <div class="images_div">
             <div id="selectedImagesContainer" style="display: none;"></div>
         </div>
         <div class="margin-div">
-            <h2>Research Report</h2>
+            <h2>Informe de Investigaciónt</h2>
             <div id="reportContainer"></div>
             <div id="reportActions">
                 <div class="alert alert-info" role="alert" id="status"></div>
-                <a id="copyToClipboard" onclick="GPTResearcher.copyToClipboard()" class="btn btn-secondary mt-3" style="margin-right: 10px;">Copy to clipboard (markdown)</a>
-                <a id="downloadLinkMd" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Download as Markdown</a>
-                <a id="downloadLink" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Download as PDF</a>
-                <a id="downloadLinkWord" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Download as Docx</a>
-                <a id="downloadLinkJson" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Download Log</a>
+                <a id="copyToClipboard" onclick="GPTResearcher.copyToClipboard()" class="btn btn-secondary mt-3" style="margin-right: 10px;">Copiar al portapapeles (markdown)</a>
+                <a id="downloadLinkMd" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Descargar como Markdown</a>
+                <a id="downloadLink" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Descargar como PDF</a>
+                <a id="downloadLinkWord" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Descargar como Docx</a>
+                <a id="downloadLinkJson" href="#" class="btn btn-secondary mt-3" style="margin-right: 10px;" target="_blank" rel="noopener noreferrer">Descargar Log</a>
             </div>
         </div>
     </main>
 
     <footer>
         <p>
-            <a target="_blank" href="https://gptr.dev">Homepage</a> |
-            <a target="_blank" href="https://github.com/assafelovic/gpt-researcher">GitHub</a> |
-            <a target="_blank" href="https://discord.gg/spBgZmm3Xe">Discord</a>
+            <a target="_blank" href="https://gptr.dev"></a> |
+            <a target="_blank" href="https://github.com/assafelovic/gpt-researcher"></a> |
+            <a target="_blank" href="https://discord.gg/spBgZmm3Xe"></a>
         </p>
-        <p>GPT Researcher &copy; 2024</p>
+        <p>Bayro Researcher &copy; 2025</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
