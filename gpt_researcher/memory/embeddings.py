@@ -5,6 +5,10 @@ OPENAI_EMBEDDING_MODEL = os.environ.get(
     "OPENAI_EMBEDDING_MODEL", "text-embedding-3-small"
 )
 
+HUGGINGFACE_EMBEDDING_MODEL = os.environ.get(
+    "HUGGINGFACE_EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2"
+)
+
 _SUPPORTED_PROVIDERS = {
     "openai",
     "azure_openai",

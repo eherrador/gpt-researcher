@@ -8,6 +8,7 @@ from gpt_researcher.agent import GPTResearcher
 from gpt_researcher.utils.enum import ReportType, ReportSource, Tone
 from evals.simple_evals.simpleqa_eval import SimpleQAEval
 from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 import json
 
 # Type variables for generic function
@@ -22,7 +23,7 @@ def map_with_progress(fn: Callable[[T], R], items: List[T]) -> List[R]:
 load_dotenv()
 
 # Verify all required environment variables
-required_env_vars = ["OPENAI_API_KEY", "TAVILY_API_KEY", "LANGCHAIN_API_KEY"]
+required_env_vars = ["OPENAI_API_KEY", "TAVILY_API_KEY", "LANGCHAIN_API_KEY", "GROQ_API_KEY", "HUGGINGFACE_API_KEY"]
 for var in required_env_vars:
     if not os.getenv(var):
         raise ValueError(f"{var} not found in environment variables")
@@ -81,6 +82,11 @@ async def main(num_examples: int):
             temperature=0, 
             model_name="gpt-4-turbo",
             openai_api_key=os.getenv("OPENAI_API_KEY")
+        )
+        grader_model = ChatGroq(
+            temperature=0, 
+            model_name="llama-3.1-8b-versatile",  # llama-3.3-70b-versatile
+            groq_api_key=os.getenv("GROQ_API_KEY")
         )
         evaluator = SimpleQAEval(grader_model=grader_model, num_examples=num_examples)
         

@@ -187,7 +187,7 @@ async def send_file_paths(websocket, file_paths: Dict[str, str]):
 
 
 def get_config_dict(
-    langchain_api_key: str, openai_api_key: str, tavily_api_key: str,
+    langchain_api_key: str, openai_api_key: str, tavily_api_key: str, groq_api_key: str, huggingface_api_key: str,
     google_api_key: str, google_cx_key: str, bing_api_key: str,
     searchapi_api_key: str, serpapi_api_key: str, serper_api_key: str, searx_url: str
 ) -> Dict[str, str]:
@@ -195,6 +195,8 @@ def get_config_dict(
         "LANGCHAIN_API_KEY": langchain_api_key or os.getenv("LANGCHAIN_API_KEY", ""),
         "OPENAI_API_KEY": openai_api_key or os.getenv("OPENAI_API_KEY", ""),
         "TAVILY_API_KEY": tavily_api_key or os.getenv("TAVILY_API_KEY", ""),
+        "GROQ_API_KEY": groq_api_key or os.getenv("GROQ_API_KEY", ""),
+        "HUGGINGFACE_API_KEY": huggingface_api_key or os.getenv("HUGGINGFACE_API_KEY", ""),
         "GOOGLE_API_KEY": google_api_key or os.getenv("GOOGLE_API_KEY", ""),
         "GOOGLE_CX_KEY": google_cx_key or os.getenv("GOOGLE_CX_KEY", ""),
         "BING_API_KEY": bing_api_key or os.getenv("BING_API_KEY", ""),
@@ -205,7 +207,7 @@ def get_config_dict(
         "LANGCHAIN_TRACING_V2": os.getenv("LANGCHAIN_TRACING_V2", "true"),
         "DOC_PATH": os.getenv("DOC_PATH", "./my-docs"),
         "RETRIEVER": os.getenv("RETRIEVER", ""),
-        "EMBEDDING_MODEL": os.getenv("OPENAI_EMBEDDING_MODEL", "")
+        "EMBEDDING_MODEL": os.getenv("HUGGINGFACE_EMBEDDING_MODEL", "")   # "EMBEDDING_MODEL": os.getenv("OPENAI_EMBEDDING_MODEL", "")
     }
 
 

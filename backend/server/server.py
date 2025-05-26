@@ -59,6 +59,8 @@ class ConfigRequest(BaseModel):
     LANGCHAIN_TRACING_V2: str
     LANGCHAIN_API_KEY: str
     OPENAI_API_KEY: str
+    GROQ_API_KEY: str
+    HUGGINGFACE_API_KEY: str
     DOC_PATH: str
     RETRIEVER: str
     GOOGLE_API_KEY: str = ''

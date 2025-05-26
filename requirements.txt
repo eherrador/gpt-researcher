@@ -12,6 +12,9 @@ markdown
 langchain
 langchain_community
 langchain-openai
+langchain-core
+langchain-groq
+langchain-huggingface
 tiktoken
 gpt-researcher
 arxiv
