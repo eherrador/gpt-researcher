@@ -26,6 +26,7 @@ _SUPPORTED_PROVIDERS = {
     "dashscope",
     "custom",
     "bedrock",
+    "aimlapi",
 }
 
 
@@ -121,6 +122,15 @@ class Memory:
                 from langchain_aws.embeddings import BedrockEmbeddings
 
                 _embeddings = BedrockEmbeddings(model_id=model, **embdding_kwargs)
+            case "aimlapi":
+                from langchain_openai import OpenAIEmbeddings
+
+                _embeddings = OpenAIEmbeddings(
+                    model=model,
+                    openai_api_key=os.getenv("AIMLAPI_API_KEY"),
+                    openai_api_base=os.getenv("AIMLAPI_BASE_URL", "https://api.aimlapi.com/v1"),
+                    **embdding_kwargs,
+                )
             case _:
                 raise Exception("Embedding not found.")
 
