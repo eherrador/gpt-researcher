@@ -91,7 +91,7 @@ export default function ResearchForm({
     >
       <div className="form-group">
         <label htmlFor="report_type" className="agent_question">
-          Report Type{" "}
+          Tipo de Reporte{" "}
         </label>
         <select
           name="report_type"
@@ -101,19 +101,19 @@ export default function ResearchForm({
           required
         >
           <option value="research_report">
-            Summary - Short and fast (~2 min)
+            Resumen - Corto y rápido (~2 min)
           </option>
-          <option value="deep">Deep Research Report</option>
-          <option value="multi_agents">Multi Agents Report</option>
+          <option value="deep">Investigación Profunda</option>
+          <option value="multi_agents">Reporte Multi Agente</option>
           <option value="detailed_report">
-            Detailed - In depth and longer (~5 min)
+            Detallado - Profundo y largo (~5 min)
           </option>
         </select>
       </div>
 
       <div className="form-group">
         <label htmlFor="report_source" className="agent_question">
-          Report Source{" "}
+          Fuente de Reporte{" "}
         </label>
         <select
           name="report_source"
@@ -122,9 +122,9 @@ export default function ResearchForm({
           className="form-control-static"
           required
         >
-          <option value="web">The Internet</option>
-          <option value="local">My Documents</option>
-          <option value="hybrid">Hybrid</option>
+          <option value="web">Internet</option>
+          <option value="local">Mis Documentos</option>
+          <option value="hybrid">Híbrido</option>
         </select>
       </div>
 
@@ -141,13 +141,13 @@ export default function ResearchForm({
         <div className="mt-4 domain_filters">
           <div className="flex gap-2 mb-4">
           <label htmlFor="domain_filters" className="agent_question">
-          Filter by domain{" "}
+          Filtrar por dominio{" "}
         </label>
             <input
               type="text"
               value={newDomain}
               onChange={(e) => setNewDomain(e.target.value)}
-              placeholder="Filter by domain (e.g., techcrunch.com)"
+              placeholder="Filtrar por dominio (ej. techcrunch.com)"
               className="input-static"
               onKeyPress={(e) => {
                 if (e.key === 'Enter') {
@@ -161,7 +161,7 @@ export default function ResearchForm({
               onClick={handleAddDomain}
               className="button-static"
             >
-              Add Domain
+              Agregar Dominio
             </button>
           </div>
 

@@ -160,7 +160,7 @@ const ResearchSidebar: React.FC<ResearchSidebarProps> = ({
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 sm:h-5 w-4 sm:w-5 mr-2 transition-transform duration-300 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
-                    New Research
+                    Nueva Investigación
                   </div>
                 </button>
 
@@ -173,8 +173,8 @@ const ResearchSidebar: React.FC<ResearchSidebarProps> = ({
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                       </div>
-                      <h3 className="text-lg font-medium text-gray-300 mb-2">No research history yet</h3>
-                      <p className="text-sm text-gray-400">Start your first research journey to build your knowledge library</p>
+                      <h3 className="text-lg font-medium text-gray-300 mb-2">No hay historial de investigaciones todavía</h3>
+                      <p className="text-sm text-gray-400">Comienza tu primera investigación para construir tu biblioteca de conocimientos</p>
                     </div>
                   ) : (
                     <ul className="space-y-2 sm:space-y-3">

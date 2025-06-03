@@ -168,63 +168,46 @@
                 <label for="report_type" class="agent-question">What type of report would you like me to
                     generate?</label>
                 <select name="report_type" id="report_type" class="form-control highlight-connection" required>
-                    <option value="research_report">Summary - Short and fast (~2 min)</option>
-                    <option value="detailed_report">Detailed - In depth and longer (~5 min)</option>
-                    <option value="resource_report">Resource Report</option>
-                    <option value="deep">Deep Research</option>
+                    <option value="research_report">Resumen - Corto y rápido (~2 min)</option>
+                    <option value="detailed_report">Detallado - Profundo y largo (~5 min)</option>
+                    <option value="resource_report">Reporte de Recursos</option>
+                    <option value="deep">Investigación Profunda</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="tone" class="agent-question">In which tone would you like the report to be
-                    generated?</label>
+                <label for="tone" class="agent-question">¿En qué tono te gustaría que se generara el reporte?</label>
                 <select name="tone" id="tone" class="form-control highlight-connection" required>
-                    <option value="Objective">Objective - Impartial and unbiased presentation of facts and findings
-                    </option>
-                    <option value="Formal">Formal - Adheres to academic standards with sophisticated language and
-                        structure</option>
-                    <option value="Analytical">Analytical - Critical evaluation and detailed examination of data and
-                        theories</option>
-                    <option value="Persuasive">Persuasive - Convincing the audience of a particular viewpoint or
-                        argument</option>
-                    <option value="Informative">Informative - Providing clear and comprehensive information on a topic
-                    </option>
-                    <option value="Explanatory">Explanatory - Clarifying complex concepts and processes</option>
-                    <option value="Descriptive">Descriptive - Detailed depiction of phenomena, experiments, or case
-                        studies</option>
-                    <option value="Critical">Critical - Judging the validity and relevance of the research and its
-                        conclusions</option>
-                    <option value="Comparative">Comparative - Juxtaposing different theories, data, or methods to
-                        highlight differences and similarities</option>
-                    <option value="Speculative">Speculative - Exploring hypotheses and potential implications or future
-                        research directions</option>
-                    <option value="Reflective">Reflective - Considering the research process and personal insights or
-                        experiences</option>
-                    <option value="Narrative">Narrative - Telling a story to illustrate research findings or
-                        methodologies</option>
-                    <option value="Humorous">Humorous - Light-hearted and engaging, usually to make the content more
-                        relatable</option>
-                    <option value="Optimistic">Optimistic - Highlighting positive findings and potential benefits
-                    </option>
-                    <option value="Pessimistic">Pessimistic - Focusing on limitations, challenges, or negative outcomes
-                    </option>
+                    <option value="Objective">Objetivo - Presentación imparcial y sin sesgos de los hechos y hallazgos</option>
+                    <option value="Formal">Formal - Se adhiere a los estándares académicos con un lenguaje sofisticado y una estructura adecuada</option>
+                    <option value="Analytical">Analítico - Evaluación crítica y examen detallado de datos y teorías</option>
+                    <option value="Persuasive">Persuasivo - Convencer al público de una particular visión o argumento</option>
+                    <option value="Informative">Informativo - Proporcionar información clara y exhaustiva sobre un tema</option>
+                    <option value="Explanatory">Explicativo - Clarificar conceptos y procesos complejos</option>
+                    <option value="Descriptive">Descriptivo - Descripción detallada de fenómenos, experimentos o casos de estudio</option>
+                    <option value="Critical">Crítico - Evaluar la validez y relevancia de la investigación y sus conclusiones</option>
+                    <option value="Comparative">Comparativo - Juxtaponer diferentes teorías, datos o métodos para resaltar diferencias y similitudes</option>
+                    <option value="Speculative">Especulativo - Explorar hipótesis y posibles implicaciones o direcciones de investigación futuras</option>
+                    <option value="Reflective">Reflexivo - Considerar el proceso de investigación y personal insights o experiencias</option>
+                    <option value="Narrative">Narrativo - Contar una historia para ilustrar los hallazgos o metodologías de investigación</option>
+                    <option value="Humorous">Humorístico - Ligero y entretenido, generalmente para hacer el contenido más accesible</option>
+                    <option value="Optimistic">Optimista - Resaltar hallazgos positivos y beneficios potenciales</option>
+                    <option value="Pessimistic">Pesimista - Enfocarse en limitaciones, desafíos o resultados negativos</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="report_source" class="agent-question">What sources would you like me to research
-                    from?</label>
-                <p class="text-left mt-0 pt-0" style="font-size: 0.7rem;">You can now do research on local documents as
-                    well. Please make sure to add the DOC_PATH env variable pointing to your documents folder.</p>
+                <label for="report_source" class="agent-question">¿De qué fuentes te gustaría que investigara?</label>
+                <p class="text-left mt-0 pt-0" style="font-size: 0.7rem;">Ahora puedes hacer investigación en documentos locales. Asegúrate de agregar la variable DOC_PATH apuntando a tu carpeta de documentos.</p>
                 <select name="report_source" id="report_source" class="form-control highlight-connection" required>
-                    <option value="web">The Web</option>
-                    <option value="local">My Documents</option>
-                    <option value="hybrid">Hybrid</option>
-                    <option value="azure">Azure storage</option>
+                    <option value="web">Web</option>
+                    <option value="local">Mis Documentos</option>
+                    <option value="hybrid">Híbrido</option>
+                    <option value="azure">Azure Storage</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="queryDomains" class="form-label">Query Domains (Optional)</label>
-                <input type="text" class="form-control highlight-connection" id="queryDomains" name="query_domains" placeholder="Enter domains separated by commas" autocomplete="on">
-                <small class="text-muted">Example: techcrunch.com, forbes.com</small>
+                <label for="queryDomains" class="form-label">Dominios de Consulta (Opcional)</label>
+                <input type="text" class="form-control highlight-connection" id="queryDomains" name="query_domains" placeholder="Ingresa dominios separados por comas" autocomplete="on">
+                <small class="text-muted">Ejemplo: techcrunch.com, forbes.com</small>
             </div>
             <input type="submit" value="Begin Research" class="btn btn-primary button-padding" id="submitButton">
         </form>
@@ -238,16 +221,16 @@
 
         <div class="margin-div research-output-container">
             <!-- Move spinner to the left side of the text -->
-            <h2><div id="modernSpinner" class="modern-spinner"></div> Research Progress <button id="expandOutputBtn" class="expand-button" title="Expand"><i class="fas fa-expand-alt"></i></button></h2>
+            <h2><div id="modernSpinner" class="modern-spinner"></div> Progreso de la Investigación <button id="expandOutputBtn" class="expand-button" title="Expand"><i class="fas fa-expand-alt"></i></button></h2>
             <p class="mt-2 text-left" style="font-size: 0.8rem;">
-                Watch as the AI works to gather information and analyze your topic in real-time.</p>
+                Mira cómo la IA trabaja para recopilar información y analizar tu tema en tiempo real.</p>
             <div id="output"></div>
         </div>
         <div class="images_div">
             <div id="selectedImagesContainer" style="display: none;"></div>
         </div>
         <div class="margin-div report-container">
-            <h2>Research Report
+            <h2>Reporte de Investigación
                 <button id="copyToClipboardTop" class="icon-button" title="Copy" style="display: none;">
                     <i class="fas fa-copy"></i>
                 </button>
@@ -275,8 +258,8 @@
 
         <!-- Chat Container -->
         <div class="margin-div chat-container" id="chatContainer" style="display: none;">
-            <h2><i class="fas fa-comments"></i> Chat with AI about this research <button id="expandChatBtn" class="expand-button" title="Expand"><i class="fas fa-expand-alt"></i></button></h2>
-            <p class="text-muted">Ask questions about the research report to get more insights</p>
+            <h2><i class="fas fa-comments"></i> Chatear con la IA sobre esta investigación <button id="expandChatBtn" class="expand-button" title="Expand"><i class="fas fa-expand-alt"></i></button></h2>
+            <p class="text-muted">Haz preguntas sobre el reporte de investigación para obtener más insights</p>
             <div id="chatMessages" class="chat-messages"></div>
             <div class="chat-input-container">
                 <textarea id="chatInput" class="form-control chat-input" placeholder="Ask a question about this research..." rows="2"></textarea>
@@ -284,7 +267,7 @@
                     <i class="fas fa-microphone"></i>
                 </button>
                 <button id="sendChatBtn" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i> Send
+                    <i class="fas fa-paper-plane"></i> Enviar
                 </button>
             </div>
         </div>
@@ -295,7 +278,7 @@
     <!-- Conversation History Panel -->
     <div class="history-panel" id="historyPanel">
         <div class="history-panel-header">
-            <h3><i class="fas fa-history"></i> Research History</h3>
+            <h3><i class="fas fa-history"></i> Historial de Investigaciones</h3>
             <div class="history-panel-actions">
                 <button id="historyPanelToggle" class="history-action-btn" title="Close panel">
                     <i class="fas fa-times"></i>
@@ -303,18 +286,18 @@
             </div>
         </div>
         <div class="history-panel-search">
-            <input type="text" id="historySearch" placeholder="Search research history...">
+            <input type="text" id="historySearch" placeholder="Buscar en el historial de investigaciones...">
             <button id="historySearchBtn" class="history-action-btn" title="Search">
                 <i class="fas fa-search"></i>
             </button>
         </div>
         <div class="history-panel-filters">
             <select id="historySortOrder">
-                <option value="newest">Newest First</option>
-                <option value="oldest">Oldest First</option>
+                <option value="newest">Más recientes primero</option>
+                <option value="oldest">Más antiguos primero</option>
             </select>
             <!-- JS will add Import/Export/Debug buttons here -->
-            <button id="historyClearBtn" class="history-action-btn" title="Clear all history">
+            <button id="historyClearBtn" class="history-action-btn" title="Limpiar todo el historial">
                 <i class="fas fa-trash-alt"></i>
             </button>
         </div>
@@ -327,7 +310,7 @@
     <div class="sticky-downloads-bar" id="stickyDownloadsBar" style="display: none;"> <!-- Initially hidden -->
         <div class="download-buttons-container">
             <a id="copyToClipboard" class="download-option-btn disabled">
-                <i class="fas fa-copy"></i> Copy (Markdown)
+                <i class="fas fa-copy"></i> Copiar (Markdown)
             </a>
             <a id="downloadLinkMd" href="#" class="download-option-btn disabled" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-file-lines"></i> Markdown

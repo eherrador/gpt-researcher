@@ -7,7 +7,7 @@ interface ToneSelectorProps {
 export default function ToneSelector({ tone, onToneChange }: ToneSelectorProps) {
   return (
     <div className="form-group">
-      <label htmlFor="tone" className="agent_question">Tone </label>
+      <label htmlFor="tone" className="agent_question">Tono del Reporte </label>
       <select 
         name="tone" 
         id="tone" 
@@ -16,23 +16,23 @@ export default function ToneSelector({ tone, onToneChange }: ToneSelectorProps) 
         className="form-control-static"
         required
       >
-        <option value="Objective">Objective - Impartial and unbiased presentation of facts and findings</option>
-        <option value="Formal">Formal - Adheres to academic standards with sophisticated language and structure</option>
-        <option value="Analytical">Analytical - Critical evaluation and detailed examination of data and theories</option>
-        <option value="Persuasive">Persuasive - Convincing the audience of a particular viewpoint or argument</option>
-        <option value="Informative">Informative - Providing clear and comprehensive information on a topic</option>
-        <option value="Explanatory">Explanatory - Clarifying complex concepts and processes</option>
-        <option value="Descriptive">Descriptive - Detailed depiction of phenomena, experiments, or case studies</option>
-        <option value="Critical">Critical - Judging the validity and relevance of the research and its conclusions</option>
-        <option value="Comparative">Comparative - Juxtaposing different theories, data, or methods to highlight differences and similarities</option>
-        <option value="Speculative">Speculative - Exploring hypotheses and potential implications or future research directions</option>
-        <option value="Reflective">Reflective - Considering the research process and personal insights or experiences</option>
-        <option value="Narrative">Narrative - Telling a story to illustrate research findings or methodologies</option>
-        <option value="Humorous">Humorous - Light-hearted and engaging, usually to make the content more relatable</option>
-        <option value="Optimistic">Optimistic - Highlighting positive findings and potential benefits</option>
-        <option value="Pessimistic">Pessimistic - Focusing on limitations, challenges, or negative outcomes</option>
-        <option value="Simple">Simple - Written for young readers, using basic vocabulary and clear explanations</option>
-        <option value="Casual">Casual - Conversational and relaxed style for easy, everyday reading</option>
+        <option value="Objective">Objetivo - Presentación imparcial y sin sesgos de los hechos y hallazgos</option>
+        <option value="Formal">Formal - Se adhiere a los estándares académicos con un lenguaje sofisticado y una estructura adecuada</option>
+        <option value="Analytical">Analítico - Evaluación crítica y examen detallado de datos y teorías</option>
+        <option value="Persuasive">Persuasivo - Convencer al público de una particular visión o argumento</option>
+        <option value="Informative">Informativo - Proporcionar información clara y exhaustiva sobre un tema</option>
+        <option value="Explanatory">Explicativo - Clarificar conceptos y procesos complejos</option>
+        <option value="Descriptive">Descriptivo - Descripción detallada de fenómenos, experimentos o casos de estudio</option>
+        <option value="Critical">Crítico - Evaluar la validez y relevancia de la investigación y sus conclusiones</option>
+        <option value="Comparative">Comparativo - Juxtaponer diferentes teorías, datos o métodos para resaltar diferencias y similitudes</option>
+        <option value="Speculative">Especulativo - Explorar hipótesis y posibles implicaciones o direcciones de investigación futuras</option>
+        <option value="Reflective">Reflexivo - Considerar el proceso de investigación y personal insights o experiencias</option>
+        <option value="Narrative">Narrativo - Contar una historia para ilustrar los hallazgos o metodologías de investigación</option>
+        <option value="Humorous">Humorístico - Ligero y entretenido, generalmente para hacer el contenido más accesible</option>
+        <option value="Optimistic">Optimista - Resaltar hallazgos positivos y beneficios potenciales</option>
+        <option value="Pessimistic">Pesimista - Enfocarse en limitaciones, desafíos o resultados negativos</option>
+        <option value="Simple">Simple - Escrito para lectores jóvenes, usando vocabulario básico y explicaciones claras</option>
+        <option value="Casual">Casual - Estilo conversacional y relajado para lectura fácil y cotidiana</option>
       </select>
     </div>
   );
