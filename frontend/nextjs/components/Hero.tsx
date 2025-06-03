@@ -139,7 +139,7 @@ const Hero: FC<THeroProps> = ({
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Dile hola a Bayro Researcher, tu compañero de IA para insights instantáneos y investigación exhaustiva
+            Dile hola a Bayro Researcher, tu compañero de IA para entendimientos instantáneos e investigación exhaustiva
           </motion.h2>
           
           {/* Powered by badge */}
