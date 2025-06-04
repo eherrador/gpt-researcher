@@ -1,0 +1,8 @@
+gcloud builds submit --tag gcr.io/vallartasoftwareai/gpt-researcher --no-cache
+
+gcloud run deploy gpt-researcher --image gcr.io/vallartasoftwareai/gpt-researcher \
+  --platform managed --region us-central1 --allow-unauthenticated \
+  --set-env-vars TAVILY_API_KEY="******************",OPENAI_API_KEY="******************",LANGCHAIN_API_KEY="*****************",LANGCHAIN_TRACING_V2=true
+
+Explicación de todo el proceso:
+https://g.co/gemini/share/f7f62419f571
