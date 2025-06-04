@@ -28,7 +28,7 @@
     },
     {
       type: 'category',
-      label: 'GPT Researcher',
+      label: 'Bayro Researcher',
       collapsible: true,
       collapsed: true,
       items: [

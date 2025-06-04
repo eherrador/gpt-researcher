@@ -3,7 +3,7 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-  title: 'GPT Researcher',
+  title: 'Bayro Researcher',
   tagline: 'The leading autonomous AI research agent',
   url: 'https://docs.gptr.dev',
   baseUrl: '/',
@@ -16,9 +16,9 @@ module.exports = {
   projectName: 'gpt-researcher',
   themeConfig: {
     navbar: {
-      title: 'GPT Researcher',
+      title: 'Bayro Researcher',
       logo: {
-        alt: 'GPT Researcher',
+        alt: 'Bayro Researcher',
         src: 'img/gptr-logo.png',
       },
       items: [
@@ -37,7 +37,7 @@ module.exports = {
           label: 'FAQ',
         },
         {
-            href: 'mailto:assaf.elovic@gmail.com',
+            href: 'mailto:edgar.herrador@gmail.com',
             position: 'left',
             label: 'Contact',
         },
@@ -82,7 +82,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} GPT Researcher.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Bayro Researcher.`,
     },
   },
   presets: [
