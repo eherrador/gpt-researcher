@@ -1,8 +1,24 @@
-gcloud builds submit --tag gcr.io/vallartasoftwareai/gpt-researcher --no-cache
-
-gcloud run deploy gpt-researcher --image gcr.io/vallartasoftwareai/gpt-researcher \
-  --platform managed --region us-central1 --allow-unauthenticated \
-  --set-env-vars TAVILY_API_KEY="******************",OPENAI_API_KEY="******************",LANGCHAIN_API_KEY="*****************",LANGCHAIN_TRACING_V2=true
-
 Explicación de todo el proceso:
 https://g.co/gemini/share/f7f62419f571
+
+=== BACKEND ===
+gcloud builds submit --tag gcr.io/vallartasoftwareai/gpt-researcher-backend --no-cache
+
+gcloud run deploy gpt-researcher-backend --image gcr.io/vallartasoftwareai/gpt-researcher-backend \
+  --platform managed --region us-central1 --allow-unauthenticated \
+  --set-env-vars TAVILY_API_KEY="********",
+  OPENAI_API_KEY="***************",
+  LANGCHAIN_API_KEY="******",LANGCHAIN_TRACING_V2=true
+
+=== FRONTEND ===
+# Desde el directorio raíz ir al directorio del frontend
+cd frontend/nextjs
+
+gcloud builds submit --tag gcr.io/vallartasoftwareai/gptr-nextjs-frontend --no-cache
+
+gcloud run deploy gptr-nextjs-frontend \
+  --image gcr.io/vallartasoftwareai/gptr-nextjs-frontend \
+  --platform managed \
+  --region us-central1 \
+  --allow-unauthenticated \
+  --set-env-vars LOGGING_LEVEL="INFO",CHOKIDAR_USEPOLLING="true",NEXT_PUBLIC_GPTR_API_URL="<URL de gpt-researcher-backend>"
