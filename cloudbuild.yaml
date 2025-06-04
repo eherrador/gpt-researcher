@@ -6,6 +6,7 @@ steps:
     '--tag', 'gcr.io/vallartasoftwareai/gptr-nextjs-frontend',
     '--no-cache',
     '--build-arg', 'NEXT_PUBLIC_GPTR_API_URL=${_GPTR_API_URL}', # Pasa el argumento de construcción usando la sustitución
+    '-f', 'frontend/nextjs/Dockerfile', # Busca Dockerfile.prod dentro de frontend/nextjs
     'frontend/nextjs' # El contexto del build: el directorio que contiene el Dockerfile y el código fuente
   ]
 
