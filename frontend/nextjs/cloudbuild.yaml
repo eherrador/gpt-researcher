@@ -1,0 +1,18 @@
+# cloudbuild.yaml
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build',
+    '--tag', 'gcr.io/vallartasoftwareai/gptr-nextjs-frontend',
+    '--no-cache',
+    '--build-arg', 'NEXT_PUBLIC_GPTR_API_URL=${_GPTR_API_URL}', # Pasa el argumento de construcción usando la sustitución
+    'frontend/nextjs' # El contexto del build: el directorio que contiene el Dockerfile y el código fuente
+  ]
+
+# Opcional: Define la imagen para subir al final del build (mejor práctica para builds multi-paso)
+images:
+- 'gcr.io/vallartasoftwareai/gptr-nextjs-frontend'
+
+# Define sustituciones globales que se pueden pasar desde la CLI o se usan por defecto
+substitutions:
+  _GPTR_API_URL: 'https://gpt-researcher-backend-472670869294.us-central1.run.app' # Valor por defecto de tu URL de backend
