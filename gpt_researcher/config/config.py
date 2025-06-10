@@ -10,7 +10,7 @@ from ..retrievers.utils import get_all_retriever_names
 
 
 class Config:
-    """Config class for Bayro Researcher."""
+    """Config class for Comex AI."""
 
     CONFIG_DIR = os.path.join(os.path.dirname(__file__), "variables")
 

@@ -5,12 +5,12 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Bayro Researcher',
+    title: 'Comex AI',
     Svg: require('../../static/img/gptr-logo.png').default,
     docLink: './docs/gpt-researcher/getting-started/getting-started',
     description: (
       <>
-        Bayro Researcher is an open source autonomous agent designed for comprehensive online research on a variety of tasks.
+        Comex AI is an open source autonomous agent designed for comprehensive online research on a variety of tasks.
       </>
     ),
   },
@@ -40,7 +40,7 @@ const FeatureList = [
     docLink: './docs/examples/examples',
     description: (
       <>
-          Check out Bayro Researcher in action across multiple frameworks and use cases such as hybrid research and long detailed reports.
+          Check out Comex AI in action across multiple frameworks and use cases such as hybrid research and long detailed reports.
       </>
     ),
   },

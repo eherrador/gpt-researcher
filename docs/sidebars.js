@@ -28,7 +28,7 @@
     },
     {
       type: 'category',
-      label: 'Bayro Researcher',
+      label: 'Comex AI',
       collapsible: true,
       collapsed: true,
       items: [

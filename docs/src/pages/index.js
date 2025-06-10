@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Layout
       title={`Documentation`}
-      description="Bayro Researcher is the leading autonomous agent designed for comprehensive online research on a variety of tasks.">
+      description="Comex AI is the leading autonomous agent designed for comprehensive online research on a variety of tasks.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

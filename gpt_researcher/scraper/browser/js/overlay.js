@@ -18,12 +18,12 @@ const textContent = document.createElement('div');
 Object.assign(textContent.style, {
     textAlign: 'center',
 });
-textContent.textContent = 'Bayro Researcher: Analyzing Page';
+textContent.textContent = 'Comex AI: Analizando página';
 overlay.appendChild(textContent);
 document.body.append(overlay);
 document.body.style.overflow = 'hidden';
 let dotCount = 0;
 setInterval(() => {
-    textContent.textContent = 'Bayro Researcher: Analyzing Page' + '.'.repeat(dotCount);
+    textContent.textContent = 'Comex AI: Analizando página' + '.'.repeat(dotCount);
     dotCount = (dotCount + 1) % 4;
 }, 1000);
