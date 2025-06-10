@@ -120,7 +120,7 @@ const Hero: FC<THeroProps> = ({
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="mb-2 xs:mb-3 sm:mb-1 md:mb-0">Dile adiós a</div>
+            <div className="mb-2 xs:mb-3 sm:mb-1 md:mb-0">Comex IA</div>
             <span
               style={{
                 backgroundImage: 'linear-gradient(to right, #0cdbb6, #1fd0f0, #06dbee)',
@@ -131,7 +131,7 @@ const Hero: FC<THeroProps> = ({
                 paddingBottom: '0.1em'
               }}
             >
-              Horas de Investigación
+              Agente de Investigación Profunda y Detallada
             </span>
           </motion.h1>
           <motion.h2 
@@ -139,7 +139,7 @@ const Hero: FC<THeroProps> = ({
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Dile hola a Comex AI, tu compañero de IA para entendimientos instantáneos e investigación exhaustiva
+            ¡Bienvenido a Comex IA! Estoy aquí para ayudarte a tomar decisiones informadas y a alcanzar tus objetivos con éxito. ¿En qué puedo ayudarte hoy?
           </motion.h2>
           
           {/* Powered by badge */}
