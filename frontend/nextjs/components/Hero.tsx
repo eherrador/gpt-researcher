@@ -131,7 +131,7 @@ const Hero: FC<THeroProps> = ({
                 paddingBottom: '0.1em'
               }}
             >
-              Agente de Investigación Profunda y Detallada
+              Investigación Profunda y Detallada
             </span>
           </motion.h1>
           <motion.h2 
@@ -139,7 +139,7 @@ const Hero: FC<THeroProps> = ({
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            ¡Bienvenido a Comex IA! Estoy aquí para ayudarte a tomar decisiones informadas y a alcanzar tus objetivos con éxito. ¿En qué puedo ayudarte hoy?
+            ¡Bienvenido a Comex IA! Estoy aquí para ayudarte a tomar decisiones informadas. ¿En qué puedo ayudarte hoy?
           </motion.h2>
           
           {/* Powered by badge */}
