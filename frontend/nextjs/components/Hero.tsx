@@ -297,17 +297,17 @@ type suggestionType = {
 const suggestions: suggestionType[] = [
   {
     id: 1,
-    name: "Analizar las acciones bursátiles de... ",
+    name: "Analizar las acciones bursátiles de ",
     icon: "/img/stock2.svg",
   },
   {
     id: 2,
-    name: "Planificar una aventura a... ",
+    name: "Tamaño del mercado de pinturas y recubrimientos en ",
     icon: "/img/hiker.svg",
   },
   {
     id: 3,
-    name: "¿Cuáles son las últimas noticias sobre... ",
+    name: "¿Cuáles son las últimas noticias sobre ",
     icon: "/img/news.svg",
   },
 ];
